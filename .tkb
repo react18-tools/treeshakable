@@ -34,7 +34,7 @@
     "EdPbrbJLllUHfZmCS80f7": {
       "id": "EdPbrbJLllUHfZmCS80f7",
       "description": "Set up `CodeCov`\n  - Visit Codecov and set up your repo\n  - Create [repository secret]((https://github.com/react18-tools/treeshakable/settings/secrets/actions)) for `CODECOV_TOKEN`",
-      "columnId": "column-todo"
+      "columnId": "column-done"
     },
     "MLLUsAhCKaKxvEXFY0HSq": {
       "id": "MLLUsAhCKaKxvEXFY0HSq",
@@ -123,7 +123,6 @@
       "title": "To do",
       "tasksIds": [
         "RX4J5v4y5IOe_ucf8pMRT",
-        "EdPbrbJLllUHfZmCS80f7",
         "MLLUsAhCKaKxvEXFY0HSq",
         "gMYfaAh2RABMP8uZRQgNx",
         "_BfuX7quWBANpDK1bI7YM",
@@ -148,6 +147,7 @@
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "EdPbrbJLllUHfZmCS80f7",
         "jdZxwLymOo7w2eZeNpvsN",
         "jcpymbi71e702p7n6fwvZ",
         "Y5__aEZl3Pbxp7r90HKpV",

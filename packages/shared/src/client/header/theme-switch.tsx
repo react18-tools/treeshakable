@@ -20,8 +20,22 @@ export default function ThemeSwitch() {
         setColorSchemePref("dark");
     }
   }, [colorSchemePref]);
+
+  const onKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.key === "Enter") {
+        toggle();
+      }
+    },
+    [toggle],
+  );
   return (
-    <div tabIndex={0} className={styles.themeswitch} onClick={toggle} onKeyDown={toggle}>
+    <div
+      tabIndex={0}
+      role="button"
+      className={styles.themeswitch}
+      onClick={toggle}
+      onKeyDown={onKeyDown}>
       <ColorSwitch />
       <span className="mb">{colorSchemePref}</span>
     </div>
