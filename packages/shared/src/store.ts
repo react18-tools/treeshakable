@@ -2,7 +2,7 @@ import treeshakable from "treeshakable";
 import { create } from "zustand";
 
 interface CounterState {
-  count: any;
+  count: number;
   setCount: (count: number) => void;
   increment: () => void;
   decrement: () => void;
