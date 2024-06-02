@@ -1,6 +1,6 @@
 import MyButton from "./button";
 import { LandingPage } from "@repo/shared/dist/server";
-import { Demo } from "@repo/shared";
+import { Demo } from "./demo";
 
 export const metadata = {
   title: "React 18 Loaders",

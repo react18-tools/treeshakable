@@ -20,7 +20,6 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/jest-presets": "workspace:*",
-    "@repo/tsk-example": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@testing-library/react": "^15.0.7",
     "@types/node": "^20.13.0",
@@ -45,7 +44,8 @@
     "r18gs": "^1.0.2",
     "react-live": "^4.1.6",
     "react18-loaders": "^1.0.3",
-    "treeshakable": "workspace:*"
+    "treeshakable": "workspace:*",
+    "zustand": "^4.5.2"
   },
   "peerDependencies": {
     "@types/react": "16.8 - 19",

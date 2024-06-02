@@ -1,10 +1,10 @@
 "use client";
 
 import styles from "./demo.module.scss";
-import { Counter2 } from "@repo/tsk-example/dist/client/counter2";
-import { Display2 } from "@repo/tsk-example/dist/client/display2";
-import { Counter } from "@repo/tsk-example/dist/client/counter";
-import { Display } from "@repo/tsk-example/dist/client/display";
+import { Counter2 } from "@repo/shared/dist/client/counter2";
+import { Display2 } from "@repo/shared/dist/client/display2";
+import { Counter } from "@repo/shared/dist/client/counter";
+import { Display } from "@repo/shared/dist/client/display";
 
 /** React live demo */
 export function Demo() {
