@@ -123,7 +123,7 @@ importers:
         version: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
       nextjs-themes:
         specifier: ^3.1.1
-        version: 3.1.1(@types/react@18.3.3)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+        version: 3.1.1(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -394,7 +394,7 @@ importers:
         version: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
       nextjs-themes:
         specifier: ^3.1.1
-        version: 3.1.1(@types/react@18.3.3)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+        version: 3.1.1(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
       r18gs:
         specifier: ^1.0.2
         version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
@@ -417,9 +417,6 @@ importers:
       '@repo/jest-presets':
         specifier: workspace:*
         version: link:../jest-presets
-      '@repo/tsk-example':
-        specifier: workspace:*
-        version: link:../treeshakable-example
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../config-typescript
@@ -468,91 +465,6 @@ importers:
       vitest:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.13.0)(jsdom@24.1.0)(sass@1.77.4)
-
-  packages/treeshakable-example:
-    dependencies:
-      '@mayank1513/fork-me':
-        specifier: ^2.1.2
-        version: 2.1.2(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
-      '@repo/scripts':
-        specifier: workspace:*
-        version: link:../../scripts
-      next:
-        specifier: 10 - 14
-        version: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
-      nextjs-themes:
-        specifier: ^3.1.1
-        version: 3.1.1(@types/react@18.3.3)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
-      r18gs:
-        specifier: ^1.0.2
-        version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
-      react-live:
-        specifier: ^4.1.6
-        version: 4.1.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react18-loaders:
-        specifier: ^1.0.3
-        version: 1.0.3(@types/react@18.3.3)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
-    devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../config-eslint
-      '@repo/jest-presets':
-        specifier: workspace:*
-        version: link:../jest-presets
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../config-typescript
-      '@testing-library/react':
-        specifier: ^15.0.7
-        version: 15.0.7(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/node':
-        specifier: ^20.13.0
-        version: 20.13.0
-      '@types/react':
-        specifier: ^18.3.3
-        version: 18.3.3
-      '@types/react-dom':
-        specifier: ^18.3.0
-        version: 18.3.0
-      '@vitejs/plugin-react':
-        specifier: ^4.3.0
-        version: 4.3.0(vite@5.2.12(@types/node@20.13.0)(sass@1.77.4))
-      '@vitest/coverage-v8':
-        specifier: ^1.6.0
-        version: 1.6.0(vitest@1.6.0(@types/node@20.13.0)(jsdom@24.1.0)(sass@1.77.4))
-      esbuild-plugin-react18:
-        specifier: ^0.2.4
-        version: 0.2.4(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
-      esbuild-plugin-react18-css:
-        specifier: ^0.0.4
-        version: 0.0.4
-      jsdom:
-        specifier: ^24.1.0
-        version: 24.1.0
-      react:
-        specifier: ^18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.3.1
-        version: 18.3.1(react@18.3.1)
-      treeshakable:
-        specifier: workspace:*
-        version: link:../../lib
-      tsup:
-        specifier: ^8.0.2
-        version: 8.0.2(postcss@8.4.38)(ts-node@10.9.2(@types/node@20.13.0)(typescript@5.4.5))(typescript@5.4.5)
-      typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
-      vite-tsconfig-paths:
-        specifier: ^4.3.2
-        version: 4.3.2(typescript@5.4.5)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.4))
-      vitest:
-        specifier: ^1.6.0
-        version: 1.6.0(@types/node@20.13.0)(jsdom@24.1.0)(sass@1.77.4)
-      zustand:
-        specifier: ^4.5.2
-        version: 4.5.2(@types/react@18.3.3)(react@18.3.1)
 
   scripts: {}
 
@@ -12579,7 +12491,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-themes@3.1.1(@types/react@18.3.3)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1):
+  nextjs-themes@3.1.1(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.3
       r18gs: 0.1.4(@types/react@18.3.3)(react@18.3.1)
