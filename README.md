@@ -2,6 +2,8 @@
 
 [![test](https://github.com/react18-tools/treeshakable/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/treeshakable/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability)](https://codeclimate.com/github/react18-tools/treeshakable/maintainability) [![codecov](https://codecov.io/gh/react18-tools/treeshakable/graph/badge.svg)](https://codecov.io/gh/react18-tools/treeshakable) [![Version](https://img.shields.io/npm/v/treeshakable.svg?colorB=green)](https://www.npmjs.com/package/treeshakable) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/treeshakable.svg)](https://www.npmjs.com/package/treeshakable) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/treeshakable) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
+![Treeshakable](./treeshakable.webp)
+
 Treeshakable is a comprehensive library designed to unlock the full potential of React 18 server components. It provides customizable loading animation components and a fullscreen loader container, seamlessly integrating with React and Next.js.
 
 ✅ Fully Treeshakable (import from `treeshakable/client/loader-container`)
@@ -102,8 +104,6 @@ export default MyComponent() {
 ## License
 
 This library is licensed under the MPL-2.0 open-source license.
-
-
 
 > <img src="https://github.com/react18-tools/treeshakable/blob/main/popper.png?raw=true" style="height: 20px"/> Please consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsoring](https://github.com/sponsors/mayank1513) our work.
 
