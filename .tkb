@@ -110,6 +110,11 @@
       "id": "wkDDELNeOfYSVmWI1eWu0",
       "description": "Install the recommended VSCode extensions:\n  - [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)",
       "columnId": "column-done"
+    },
+    "gyKAFmuvBlq51gTq7THw0": {
+      "id": "gyKAFmuvBlq51gTq7THw0",
+      "description": "Update Readme \n- Explain the need of treeshakable\n- Explain why to use () => store and not just store in arg",
+      "columnId": "column-todo"
     }
   },
   "columns": [
@@ -130,7 +135,8 @@
         "FDFqCQvLm2mUlnTJ3Gna5",
         "O1qAByMoxhHOR-a_guL91",
         "0499BqWDwJ5cxqtC9Nr82",
-        "IjuAtNquJ4-Ut874rHKIW"
+        "IjuAtNquJ4-Ut874rHKIW",
+        "gyKAFmuvBlq51gTq7THw0"
       ]
     },
     {

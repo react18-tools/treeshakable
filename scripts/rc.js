@@ -170,8 +170,8 @@ module.exports = {
     {
       type: "list",
       name: "pkgPath",
-      choices: ["lib", "packages/shared"],
-      default: "lib",
+      choices: ["lib", "packages/treeshakable-example", "packages/shared"],
+      default: "packages/treeshakable-example",
       message: "Select the package",
     },
     {
