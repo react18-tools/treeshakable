@@ -21,7 +21,7 @@ export const Display = ({ children, ...props }: DisplayProps) => {
   const count = useTreeshakableCounterStore(state => state.count);
   return (
     <div {...props} className={className} data-testid="display">
-      <h2>Counter 1 Display</h2>
+      <h3>Counter 1 Display</h3>
       <p>Count is: {count}</p>
     </div>
   );

@@ -10,3 +10,7 @@
 export * from "./header";
 export * from "./global-loader";
 export * from "./drawer-button";
+export * from "./counter";
+export * from "./counter2";
+export * from "./display";
+export * from "./display2";

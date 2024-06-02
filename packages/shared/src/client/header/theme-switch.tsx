@@ -21,9 +21,9 @@ export default function ThemeSwitch() {
     }
   }, [colorSchemePref]);
   return (
-    <button className={styles.themeswitch} onClick={toggle}>
+    <div tabIndex={0} className={styles.themeswitch} onClick={toggle} onKeyDown={toggle}>
       <ColorSwitch />
       <span className="mb">{colorSchemePref}</span>
-    </button>
+    </div>
   );
 }
