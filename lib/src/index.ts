@@ -4,8 +4,19 @@ declare global {
 const globalThisForBetterMinification = globalThis;
 globalThisForBetterMinification.tsk = {};
 const globalTsk = globalThisForBetterMinification.tsk;
-const treeshakable = <T>(key: string, store: T): T => {
-  if (!globalTsk[key]) globalTsk[key] = store;
+
+/**
+ * Creates a tree-shakable store.
+ * @example
+ * const store = treeshakable('my-store', () => createStore(...));
+ *
+ * @param key A unique key for the store
+ * @template T The type of the store
+ * @param storeCreator A function that creates a new store
+ * @returns A tree-shakable store
+ */
+const treeshakable = <T>(key: string, storeCreator: () => T): T => {
+  if (!globalTsk[key]) globalTsk[key] = storeCreator();
   return globalTsk[key] as T;
 };
 
