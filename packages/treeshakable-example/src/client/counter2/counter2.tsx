@@ -1,25 +1,20 @@
 import { HTMLProps, ReactNode } from "react";
-import styles from "./counter2.module.scss";
+import styles from "./counter.module.scss";
+import { useCounterStore } from "../../store";
 
 export interface Counter2Props extends HTMLProps<HTMLDivElement> {
-	children: ReactNode;
+  children: ReactNode;
 }
 
-/**
- * 
- *
- * @example
- * ```tsx
- * <Counter2 />
- * ```
- * 
- * @source - Source code
- */
 export const Counter2 = ({ children, ...props }: Counter2Props) => {
-  const className = [props.className, styles["counter2"]].filter(Boolean).join(" ");
-	return (
-		<div {...props} className={className} data-testid="counter2">
-			{children}
-		</div>
-	);
-}
+  const className = [props.className, styles["counter"]].filter(Boolean).join(" ");
+  const { increment, decrement, setCount } = useCounterStore();
+  return (
+    <div {...props} className={className} data-testid="counter">
+      <h2>Counter 1 Controls</h2>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={() => setCount(0)}>Reset</button>
+    </div>
+  );
+};
