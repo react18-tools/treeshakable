@@ -4,13 +4,36 @@
 
 ![Treeshakable](./treeshakable.webp)
 
-Treeshakable is a comprehensive library designed to unlock the full potential of React 18 server components. It provides customizable loading animation components and a fullscreen loader container, seamlessly integrating with React and Next.js.
+Treeshakable is a comprehensive library designed to unlock the full potential of React 18 server components. It enhances any state management library with full tree-shaking capabilities, ensuring efficient state management and reducing package size by facilitating shared state even when importing components from separate files. Additionally, it improves performance by avoiding redundant state creation steps.
 
-✅ Fully Treeshakable (import from `treeshakable/client/loader-container`)
+> If you're in need of basic global state management for your library, consider using ["React18 Global Store"](https://github.com/react18-tools/react18-global-store), as its smaller npm bundle size ![npm bundle size](https://img.shields.io/bundlephobia/minzip/r18gs) will lead to improved performance and reduced overall bundle size.
+
+## Why Treeshakable?
+
+In modern JavaScript applications, especially those using React, tree-shaking is a crucial optimization technique. Tree-shaking helps eliminate dead code, reducing the overall bundle size and improving load times. However, when importing components from separate files, state management libraries can create separate stores, leading to redundancy and increased package size. Additionally, the creation of multiple stores can break the functionality of the library, as different components or hooks imported from different files end up interacting with isolated stores. This issue is particularly prevalent with libraries built using Zustand and similar libraries.
+
+Without Treeshakable:
+
+- Importing components from different files may lead to multiple instances of the same store.
+- This redundancy increases package size and memory usage.
+- It can degrade performance due to unnecessary state management overhead.
+- Importing components from different files may break functionality that depends on a central global store.
+
+Treeshakable addresses these challenges by ensuring a single shared state across different imports, optimizing tree-shaking, and reducing overall package size.
+
+For a live example demonstrating these concerns see the [official website](https://treeshakable.vercel.app/)
+
+✅ Universal Compatibility: Works with various state management libraries.
+
+✅ Tree-Shaking Optimization: Enables full tree-shaking for efficient code splitting and reduced package size.
+
+✅ Shared State Management: Facilitates shared state across different imports, preventing the creation of multiple stores.
+
+✅ Create fully Treeshakable (import from `treeshakable/client/loader-container`)
 
 ✅ Fully TypeScript Supported
 
-✅ Leverages the power of React 18 Server components
+✅ Leverage the power of React 18 Server components
 
 ✅ Compatible with all React 18 build systems/tools/frameworks
 
@@ -40,66 +63,41 @@ $ npm install treeshakable
 $ yarn add treeshakable
 ```
 
-### Import Styles
-
-You can import styles globally or within specific components.
-
-```css
-/* globals.css */
-@import "treeshakable/dist";
-```
-
-```tsx
-// layout.tsx
-import "treeshakable/dist/index.css";
-```
-
-For selective imports:
-
-```css
-/* globals.css */
-@import "treeshakable/dist/client"; /** required if you are using LoaderContainer */
-@import "treeshakable/dist/server/bars/bars1";
-```
-
 ### Usage
 
-Using loaders is straightforward.
+Here is a basic example of how to use Treeshakable with a state management library:
 
 ```tsx
-import { Bars1 } from "treeshakable/dist/server/bars/bars1";
+import treeshakable from "treeshakable";
+import { create } from "zustand";
 
-export default function MyComponent() {
-  return someCondition ? <Bars1 /> : <>Something else...</>;
+interface CounterState {
+  count: number;
+  setCount: (count: number) => void;
 }
+
+export const useTreeshakableCounterStore = treeshakable("counter-store", () =>
+  create<CounterState>(set => ({
+    count: 0,
+    setCount: count => set({ count }),
+  })),
+);
 ```
+
+In this example, Treeshakable is applied as a higher-order function to enhance the Zustand store with tree-shaking capabilities.
+
+### Why use `treeshakable('my-store', () => createStore(...))` and not `treeshakable('my-store', createStore(...))`?
+
+The distinction here is critical:
+
+- **`treeshakable('my-store', createStore(...))`** would immediately invoke `createStore` and create the store instance during module initialization. This approach can defeat the purpose of tree-shaking because the store would be created regardless of whether it is used or not.
+- **`treeshakable('my-store', () => createStore(...))`** passes a function that returns the store instance. This approach ensures the store creation happens only once, optimizing performance and reducing bundle size through lazy initialization.
 
 For detailed API and options, refer to [the API documentation](https://react18-tools.github.io/treeshakable).
 
-**Using LoaderContainer**
+## Motivation
 
-`LoaderContainer` is a fullscreen component. You can add this component directly in your layout and then use `useLoader` hook to toggle its visibility.
-
-```tsx
-// layout.tsx
-<LoaderContainer />
-	 ...
-```
-
-```tsx
-// some other page or component
-import { useLoader } from "treeshakable/dist/hooks";
-
-export default MyComponent() {
-	const { setLoading } = useLoader();
-	useCallback(()=>{
-		setLoading(true);
-		...do some work
-		setLoading(false);
-	}, [])
-	...
-}
-```
+I developed Treeshakable after encountering issues with importing from specific folders for better tree-shaking, which resulted in the creation of separate Zustand stores and increased package size. Treeshakable addresses this by ensuring shared state across different imports, optimizing tree-shaking, and reducing overall package size.
 
 ![Repo Stats](https://repobeats.axiom.co/api/embed/c48bd4105676d990159fd3f80896d179b39254b9.svg "Repobeats analytics image")
 
