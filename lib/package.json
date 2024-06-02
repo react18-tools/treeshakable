@@ -67,6 +67,7 @@
     }
   ],
   "keywords": [
+    "Treeshakable",
     "React",
     "React 18",
     "React 19",
