@@ -4,13 +4,19 @@
 
 ![Treeshakable](./treeshakable.webp)
 
-Treeshakable is a comprehensive library designed to unlock the full potential of React 18 server components. It provides customizable loading animation components and a fullscreen loader container, seamlessly integrating with React and Next.js.
+Treeshakable is a comprehensive library designed to unlock the full potential of React 18 server components. It is a universal library designed to enhance any state management library with full tree-shaking capabilities. This optimization ensures efficient state management and reduces package size by facilitating shared state even when importing components from separate files. Not only that, it also improves performance by avoiding redundant state creation steps.
 
-✅ Fully Treeshakable (import from `treeshakable/client/loader-container`)
+✅ Universal Compatibility: Works with various state management libraries.
+
+✅ Tree-Shaking Optimization: Enables full tree-shaking for efficient code splitting and reduced package size.
+
+✅ Shared State Management: Facilitates shared state across different imports, preventing the creation of multiple stores.
+
+✅ Create fully Treeshakable (import from `treeshakable/client/loader-container`)
 
 ✅ Fully TypeScript Supported
 
-✅ Leverages the power of React 18 Server components
+✅ Leverage the power of React 18 Server components
 
 ✅ Compatible with all React 18 build systems/tools/frameworks
 
@@ -40,66 +46,32 @@ $ npm install treeshakable
 $ yarn add treeshakable
 ```
 
-### Import Styles
-
-You can import styles globally or within specific components.
-
-```css
-/* globals.css */
-@import "treeshakable/dist";
-```
-
-```tsx
-// layout.tsx
-import "treeshakable/dist/index.css";
-```
-
-For selective imports:
-
-```css
-/* globals.css */
-@import "treeshakable/dist/client"; /** required if you are using LoaderContainer */
-@import "treeshakable/dist/server/bars/bars1";
-```
-
 ### Usage
 
-Using loaders is straightforward.
+Here is a basic example of how to use Treeshakable with a state management library:
 
 ```tsx
-import { Bars1 } from "treeshakable/dist/server/bars/bars1";
+import treeshakable from "treeshakable";
+import { create } from "zustand";
 
-export default function MyComponent() {
-  return someCondition ? <Bars1 /> : <>Something else...</>;
+interface CounterState {
+  count: number;
+  setCount: (count: number) => void;
 }
+
+export const useTreeshakableCounterStore = treeshakable("counter-store", () =>
+  create<CounterState>(set => ({
+    count: 0,
+    setCount: count => set({ count }),
+  })),
+);
 ```
 
-For detailed API and options, refer to [the API documentation](https://react18-tools.github.io/treeshakable).
+In this example, treeshakable is applied as a higher-order function to enhance the Zustand store with tree-shaking capabilities. For detailed API and options, refer to [the API documentation](https://react18-tools.github.io/treeshakable).
 
-**Using LoaderContainer**
+## Motivation
 
-`LoaderContainer` is a fullscreen component. You can add this component directly in your layout and then use `useLoader` hook to toggle its visibility.
-
-```tsx
-// layout.tsx
-<LoaderContainer />
-	 ...
-```
-
-```tsx
-// some other page or component
-import { useLoader } from "treeshakable/dist/hooks";
-
-export default MyComponent() {
-	const { setLoading } = useLoader();
-	useCallback(()=>{
-		setLoading(true);
-		...do some work
-		setLoading(false);
-	}, [])
-	...
-}
-```
+I developed Treeshakable after encountering issues with importing from specific folders for better tree-shaking, which resulted in the creation of separate Zustand stores and increased package size. Treeshakable addresses this by ensuring shared state across different imports, optimizing tree-shaking, and reducing overall package size.
 
 ![Repo Stats](https://repobeats.axiom.co/api/embed/c48bd4105676d990159fd3f80896d179b39254b9.svg "Repobeats analytics image")
 
