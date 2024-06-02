@@ -1,6 +1,6 @@
 {
-  "owner": "react18-tools",
-  "npm_user": "mayank1513",
-  "repo": "turborepo-template",
-  "packageName": "react18-loaders"
+	"owner": "react18-tools",
+	"npm_user": "react18-tools",
+	"repo": "treeshakable",
+	"packageName": "treeshakable"
 }
