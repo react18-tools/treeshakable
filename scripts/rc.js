@@ -59,9 +59,10 @@ function toKebabCase(str) {
  * createRootIndexAndDeclarations if not present.
  * @param {InquirerDataType} data - Input data.
  */
-function createRootIndexAndDeclarations(data) {
+function createRootIndexAndDeclarations(data, root) {
+  const srcDir = path.resolve(__dir, `${data.pkgPath}/src`);
   /** Create index.ts in src directory if not present.  */
-  if (!fs.existsSync(path.resolve(__dir, `${data.pkgPath}/src`, "index.ts"))) {
+  if (!fs.existsSync(path.resolve(srcDir, "index.ts"))) {
     nestedRouteActions.push({
       type: "add",
       path: `${data.pkgPath}/src/index.ts`,
@@ -70,7 +71,7 @@ function createRootIndexAndDeclarations(data) {
   }
 
   /** Create declaration if not present.  */
-  if (!fs.existsSync(path.resolve(__dir, `${data.pkgPath}/src`, "declaration.d.ts"))) {
+  if (!fs.existsSync(path.resolve(srcDir, "declaration.d.ts"))) {
     nestedRouteActions.push({
       type: "add",
       path: `${data.pkgPath}/src/declaration.d.ts`,
@@ -78,12 +79,15 @@ function createRootIndexAndDeclarations(data) {
     });
   }
 
+  const banner = isClient ? '"use client";\n\n' : "";
+  const patternLine = `// ${isClient ? "client" : "server"} component exports`;
+
   /** Create index.ts in src/client or src/server directory if not present.  */
   if (!fs.existsSync(path.resolve(__dir, root, "index.ts"))) {
     nestedRouteActions.push({
       type: "add",
       path: `${root}index.ts`,
-      template: `${isClient ? '"use client";\n\n' : ""}/**\n * Server components and client components need to be exported from separate files as\n * directive on top of the file from which component is imported takes effect.\n * i.e., server component re-exported from file with "use client" will behave as client component\n */\n\n// ${isClient ? "client" : "server"} component exports\n`,
+      template: `${banner}/**\n * Server components and client components need to be exported from separate files as\n * directive on top of the file from which component is imported takes effect.\n * i.e., server component re-exported from file with "use client" will behave as client component\n */\n\n${patternLine}\n`,
     });
   }
 }
@@ -99,7 +103,7 @@ function getNestedRouteActions(data) {
   const root = `${data.pkgPath}/src/${isClient ? "client/" : "server/"}`;
   const nestedRouteActions = [];
 
-  createRootIndexAndDeclarations(data);
+  createRootIndexAndDeclarations(data, root);
 
   if (!name.includes("/")) return { nestedRouteActions, parentDir: root };
 
