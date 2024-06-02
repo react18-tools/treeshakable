@@ -4,7 +4,7 @@ import { Display2 as Display2FromOwnFile } from "@repo/shared/dist/client/displa
 
 import { Counter2, Display2 } from "@repo/shared";
 
-const importStatements = `import { Counter2, Display2 } from "@repo/shared";`;
+const importStatements = 'import { Counter2, Display2 } from "@repo/shared";';
 
 const importStatements2 = `import { Counter2 } from "@repo/shared/dist/client/counter2";
 import { Display2 } from "@repo/shared/dist/client/display2";
