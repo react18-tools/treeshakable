@@ -1,6 +1,6 @@
 # Treeshakable <img src="https://github.com/react18-tools/treeshakable/blob/main/popper.png?raw=true" style="height: 40px"/>
 
-[![test](https://github.com/react18-tools/treeshakable/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/treeshakable/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability)](https://codeclimate.com/github/react18-tools/treeshakable/maintainability) [![codecov](https://codecov.io/gh/react18-tools/treeshakable/graph/badge.svg)](https://codecov.io/gh/react18-tools/treeshakable) [![Version](https://img.shields.io/npm/v/treeshakable.svg?colorB=green)](https://www.npmjs.com/package/treeshakable) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/treeshakable.svg)](https://www.npmjs.com/package/treeshakable) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/treeshakable) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
+[![test](https://github.com/react18-tools/treeshakable/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/treeshakable/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/fa9dc6dd9d9afeeca32d/maintainability)](https://codeclimate.com/github/react18-tools/treeshakable/maintainability) [![codecov](https://codecov.io/gh/react18-tools/treeshakable/graph/badge.svg)](https://codecov.io/gh/react18-tools/treeshakable) [![Version](https://img.shields.io/npm/v/treeshakable.svg?colorB=green)](https://www.npmjs.com/package/treeshakable) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/treeshakable.svg)](https://www.npmjs.com/package/treeshakable) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/treeshakable) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
 ![Treeshakable](./treeshakable.webp)
 
@@ -100,6 +100,8 @@ export default MyComponent() {
 	...
 }
 ```
+
+![Repo Stats](https://repobeats.axiom.co/api/embed/c48bd4105676d990159fd3f80896d179b39254b9.svg "Repobeats analytics image")
 
 ## License
 
