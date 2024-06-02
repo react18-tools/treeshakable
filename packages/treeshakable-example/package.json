@@ -44,7 +44,8 @@
     "r18gs": "^1.0.2",
     "react-live": "^4.1.6",
     "react18-loaders": "latest",
-    "treeshakable": "workspace:*"
+    "treeshakable": "workspace:*",
+    "zustand": "^4.5.2"
   },
   "peerDependencies": {
     "@types/react": "16.8 - 19",
