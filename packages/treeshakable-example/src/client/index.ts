@@ -7,4 +7,7 @@
  */
 
 // client component exports
+export * from "./display2";
+export * from "./counter2";
+export * from "./display";
 export * from "./counter";
