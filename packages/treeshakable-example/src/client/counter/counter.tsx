@@ -3,7 +3,7 @@ import styles from "./counter.module.scss";
 import { useTreeshakableCounterStore } from "../../store";
 
 export interface CounterProps extends HTMLProps<HTMLDivElement> {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 /**

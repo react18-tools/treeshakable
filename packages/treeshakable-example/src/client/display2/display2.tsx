@@ -1,9 +1,9 @@
 import { HTMLProps, ReactNode } from "react";
-import styles from "./display.module.scss";
+import styles from "./display2.module.scss";
 import { useCounterStore } from "../../store";
 
 export interface DisplayProps2 extends HTMLProps<HTMLDivElement> {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 /**

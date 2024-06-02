@@ -1,24 +1,27 @@
 "use client";
 
 import styles from "./demo.module.scss";
-import { LiveProvider, LiveEditor, LivePreview } from "react-live";
-import { Dots1, Dots2, Bars1, Bars2 } from "react18-loaders/dist/server";
-
-const code = `
-// available components Dots1, Dots2, Bars1, Bars2
-<div className="${styles.center}">
- <Bars1 color="var(--text-color)"/>
-</div>
-`;
+import { Counter2 } from "@repo/tsk-example/dist/client/counter2";
+import { Display2 } from "@repo/tsk-example/dist/client/display2";
+import { Counter } from "@repo/tsk-example/dist/client/counter";
+import { Display } from "@repo/tsk-example/dist/client/display";
 
 /** React live demo */
 export function Demo() {
   return (
-    <LiveProvider code={code} scope={{ Dots1, Dots2, Bars1, Bars2 }}>
-      <div className={styles.demo}>
-        <LiveEditor className={styles.code} />
-        <LivePreview className={styles.preview} />
+    <div className={styles.container}>
+      <div>
+        <h2>Using global store without treeshakable</h2>
+        <p>Importing both Counter and Display from </p>
+        <Counter2 />
+        <Display2 />
       </div>
-    </LiveProvider>
+      <div>
+        <h2>Using treeshakable store</h2>
+        <p>Importing both Counter and Display from </p>
+        <Counter />
+        <Display />
+      </div>
+    </div>
   );
 }

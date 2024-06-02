@@ -1,9 +1,9 @@
 import { HTMLProps, ReactNode } from "react";
-import styles from "./counter.module.scss";
+import styles from "./counter2.module.scss";
 import { useCounterStore } from "../../store";
 
 export interface Counter2Props extends HTMLProps<HTMLDivElement> {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const Counter2 = ({ children, ...props }: Counter2Props) => {
