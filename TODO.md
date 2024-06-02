@@ -1,22 +1,13 @@
 ## Step-by-Step Instructions and Checklist
 
-- [ ] Star [this repository](https://github.com/react18-tools/turborepo-template/) for easy access and to show your support
-- [ ] Create a new GitHub repository using this template.
-  - Click the `Use this template` button at the top right -> `Create a new repository`
-  - Click `Create repository` and wait for the setup workflow to finish rebranding your repo.
-- [ ] Install and set up Node.js and your IDE (VSCode recommended)
-- [ ] Install the recommended VSCode extensions:
-  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)
-- [ ] 🌟 **Update [`sripts/rebrand.config.json`](./scripts/rebrand.config.json) if required.**
 - [ ] Install `pnpm` using `npm i -g pnpm`
 - [ ] Install dependencies using `pnpm`
   - Run `pnpm i` to install dependencies; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit
 - [ ] Run `yarn plop`, and follow prompts to generate server or client components for your library
-- [ ] 🌟 Enable [private vulnerability reporting]
+- [ ] 🌟 Enable [private vulnerability reporting](https://github.com/react18-tools/treeshakable/security)
 - [ ] Set up `CodeCov`
   - Visit Codecov and set up your repo
-  - Create [repository secret] for `CODECOV_TOKEN`
+  - Create [repository secret]((https://github.com/react18-tools/treeshakable/settings/secrets/actions)) for `CODECOV_TOKEN`
 - [ ] Set up `CodeClimate`
   - Visit CodeClimate and set up your repo
   - Create [repository secret] for `CC_TEST_REPORTER_ID`
@@ -30,7 +21,7 @@
 - [ ] Create your library and update examples
 - [ ] Update README as required
 - [ ] Set up GitHub pages to deploy docs
-  - Go to [repo settings] -> pages (On the left panel); Select deploy from a branch; Then Select `main` and `/docs`
+  - Go to [repo settings](https://github.com/react18-tools/treeshakable/settings/pages) -> pages (On the left panel); Select deploy from a branch; Then Select `main` and `/docs`
 - [ ] (Optional) Set up [Deepsource](https://app.deepsource.com/login) for static code analysis
 - [ ] Push your changes/Create PR and see your library being automatically tested and published
 - [ ] Optionally deploy your examples to Vercel.
