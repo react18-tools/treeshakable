@@ -4,7 +4,24 @@
 
 ![Treeshakable](./treeshakable.webp)
 
-Treeshakable is a comprehensive library designed to unlock the full potential of React 18 server components. It is a universal library designed to enhance any state management library with full tree-shaking capabilities. This optimization ensures efficient state management and reduces package size by facilitating shared state even when importing components from separate files. Not only that, it also improves performance by avoiding redundant state creation steps.
+Treeshakable is a comprehensive library designed to unlock the full potential of React 18 server components. It enhances any state management library with full tree-shaking capabilities, ensuring efficient state management and reducing package size by facilitating shared state even when importing components from separate files. Additionally, it improves performance by avoiding redundant state creation steps.
+
+> If you're in need of basic global state management for your library, consider using ["React18 Global Store"](https://github.com/react18-tools/react18-global-store), as its smaller npm bundle size ![npm bundle size](https://img.shields.io/bundlephobia/minzip/r18gs) will lead to improved performance and reduced overall bundle size.
+
+## Why Treeshakable?
+
+In modern JavaScript applications, especially those using React, tree-shaking is a crucial optimization technique. Tree-shaking helps eliminate dead code, reducing the overall bundle size and improving load times. However, when importing components from separate files, state management libraries can create separate stores, leading to redundancy and increased package size. Additionally, the creation of multiple stores can break the functionality of the library, as different components or hooks imported from different files end up interacting with isolated stores. This issue is particularly prevalent with libraries built using Zustand and similar libraries.
+
+Without Treeshakable:
+
+- Importing components from different files may lead to multiple instances of the same store.
+- This redundancy increases package size and memory usage.
+- It can degrade performance due to unnecessary state management overhead.
+- Importing components from different files may break functionality that depends on a central global store.
+
+Treeshakable addresses these challenges by ensuring a single shared state across different imports, optimizing tree-shaking, and reducing overall package size.
+
+For a live example demonstrating these concerns see the [official website](https://treeshakable.vercel.app/)
 
 ✅ Universal Compatibility: Works with various state management libraries.
 
@@ -67,7 +84,16 @@ export const useTreeshakableCounterStore = treeshakable("counter-store", () =>
 );
 ```
 
-In this example, treeshakable is applied as a higher-order function to enhance the Zustand store with tree-shaking capabilities. For detailed API and options, refer to [the API documentation](https://react18-tools.github.io/treeshakable).
+In this example, Treeshakable is applied as a higher-order function to enhance the Zustand store with tree-shaking capabilities.
+
+### Why use `treeshakable('my-store', () => createStore(...))` and not `treeshakable('my-store', createStore(...))`?
+
+The distinction here is critical:
+
+- **`treeshakable('my-store', createStore(...))`** would immediately invoke `createStore` and create the store instance during module initialization. This approach can defeat the purpose of tree-shaking because the store would be created regardless of whether it is used or not.
+- **`treeshakable('my-store', () => createStore(...))`** passes a function that returns the store instance. This approach ensures the store creation happens only once, optimizing performance and reducing bundle size through lazy initialization.
+
+For detailed API and options, refer to [the API documentation](https://react18-tools.github.io/treeshakable).
 
 ## Motivation
 
