@@ -56,16 +56,10 @@ function toKebabCase(str) {
 }
 
 /**
- * Gets nested route actions based on the provided data.
+ * createRootIndexAndDeclarations if not present.
  * @param {InquirerDataType} data - Input data.
- * @returns {Object} Nested route actions and parent directory.
  */
-function getNestedRouteActions(data) {
-  const { isClient } = data;
-  const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
-  const root = `${data.pkgPath}/src/${isClient ? "client/" : "server/"}`;
-  const nestedRouteActions = [];
-
+function createRootIndexAndDeclarations(data) {
   /** Create index.ts in src directory if not present.  */
   if (!fs.existsSync(path.resolve(__dir, `${data.pkgPath}/src`, "index.ts"))) {
     nestedRouteActions.push({
@@ -92,6 +86,20 @@ function getNestedRouteActions(data) {
       template: `${isClient ? '"use client";\n\n' : ""}/**\n * Server components and client components need to be exported from separate files as\n * directive on top of the file from which component is imported takes effect.\n * i.e., server component re-exported from file with "use client" will behave as client component\n */\n\n// ${isClient ? "client" : "server"} component exports\n`,
     });
   }
+}
+
+/**
+ * Gets nested route actions based on the provided data.
+ * @param {InquirerDataType} data - Input data.
+ * @returns {Object} Nested route actions and parent directory.
+ */
+function getNestedRouteActions(data) {
+  const { isClient } = data;
+  const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
+  const root = `${data.pkgPath}/src/${isClient ? "client/" : "server/"}`;
+  const nestedRouteActions = [];
+
+  createRootIndexAndDeclarations(data);
 
   if (!name.includes("/")) return { nestedRouteActions, parentDir: root };
 
