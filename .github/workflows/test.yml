@@ -22,11 +22,11 @@ jobs:
         continue-on-error: true
         uses: codecov/codecov-action@v4
         with:
-          directory: ./lib
+          directory: ./treeshakable
           token: ${{ secrets.CODECOV_TOKEN }}
       - uses: paambaati/codeclimate-action@v5.0.0
         continue-on-error: true
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageLocations: ./lib/coverage/*.xml:clover
+          coverageLocations: ./treeshakable/coverage/*.xml:clover

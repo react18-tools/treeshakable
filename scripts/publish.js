@@ -16,7 +16,7 @@ try {
   // no changesets to be applied
 }
 
-const { version: VERSION, name } = require("../lib/package.json");
+const { version: VERSION, name } = require("../treeshakable/package.json");
 let LATEST_VERSION;
 
 try {
@@ -39,7 +39,7 @@ if (!isPatch) {
 }
 
 /** Create release */
-execSync("cd lib && pnpm build && npm publish --provenance --access public");
+execSync("cd treeshakable && pnpm build && npm publish --provenance --access public");
 
 /** Create GitHub release */
 execSync(

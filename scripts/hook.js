@@ -43,8 +43,8 @@ module.exports = {
     {
       type: "list",
       name: "pkgPath",
-      choices: ["lib", "packages/shared"],
-      default: "lib",
+      choices: ["treeshakable", "packages/shared"],
+      default: "treeshakable",
       message: "Select the package",
     },
     {

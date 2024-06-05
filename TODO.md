@@ -16,7 +16,7 @@
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate package publishing
   - Log in to your [`npm` account](https://www.npmjs.com/login) and create an automation token
   - Create a new repository secret `NPM_AUTH_TOKEN`
-- [ ] Update description in `lib/package.json`
+- [ ] Update description in `treeshakable/package.json`
 - [ ] (Optional) Add Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)
 - [ ] Create your library and update examples
 - [ ] Update README as required

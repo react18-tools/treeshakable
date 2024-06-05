@@ -4,6 +4,6 @@
     "lib": ["dom", "ES2015"],
     "types": ["node"]
   },
-  "include": ["./lib/src/**/*.*"],
+  "include": ["./treeshakable/src/**/*.*"],
   "exclude": ["**/*.test.tsx", "dist", "build", "node_modules"]
 }

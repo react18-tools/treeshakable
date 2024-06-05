@@ -2,7 +2,7 @@
 module.exports = {
   tsconfig: "tsconfig.docs.json",
   name: "React18 Loaders",
-  entryPoints: ["./lib/src"],
+  entryPoints: ["./treeshakable/src"],
   exclude: ["**/*.test.tsx", "**/declaration.d.ts"],
   entryPointStrategy: "Expand",
   out: "./docs",

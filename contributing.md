@@ -15,7 +15,7 @@ This template is equipped with pre-configured tools to streamline your developme
 - Automatic rebranding functionality for this template
 - Workflows facilitating testing, documentation, dependency updates, and deployment of your docs and packages
 - Build setup capable of creating appropriate CJS and ESM builds to support React 18 server and client component exports from the same library
-- Out-of-the-box support for SCSS modules for `lib` and `packages/shared`
+- Out-of-the-box support for SCSS modules for `treeshakable` and `packages/shared`
 
 ### Apps and Packages
 

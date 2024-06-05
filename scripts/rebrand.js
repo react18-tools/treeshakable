@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const rebrandConfig = require("./rebrand.config.json");
-const packageJSON = require("../lib/package.json");
+const packageJSON = require("../treeshakable/package.json");
 
 const rootDir = process.cwd();
 const oldPkgName = packageJSON.name;
@@ -9,7 +9,7 @@ const [oldOwner, oldRepo] = packageJSON.repository.split(":")[1].split("/");
 
 const { packageName, owner, repo } = rebrandConfig;
 
-// Rebrand lib packageJSON
+// Rebrand treeshakable packageJSON
 packageJSON.name = packageName;
 packageJSON.description = "";
 packageJSON.version = "0.0.0";
@@ -24,7 +24,7 @@ packageJSON.funding.unshift({
 packageJSON.keywords = packageJSON.keywords.slice(2);
 
 fs.writeFileSync(
-  path.resolve(rootDir, "lib", "package.json"),
+  path.resolve(rootDir, "treeshakable", "package.json"),
   JSON.stringify(packageJSON, null, 2),
 );
 
@@ -58,14 +58,14 @@ const updatePkgAndRemoveChangelogs = dir => {
 });
 
 try {
-  fs.unlinkSync(path.resolve(rootDir, "lib", "CHANGELOG.md"));
+  fs.unlinkSync(path.resolve(rootDir, "treeshakable", "CHANGELOG.md"));
 } catch {
   /* empty */
 }
 
 // Update README
 const readme = fs
-  .readFileSync(path.resolve(rootDir, "lib", "README.md"), "utf-8")
+  .readFileSync(path.resolve(rootDir, "treeshakable", "README.md"), "utf-8")
   .replace(new RegExp(oldPkgName, "g"), packageName)
   .replace(new RegExp(oldOwner, "g"), owner)
   .replace(new RegExp(oldRepo, "g"), repo)
@@ -78,7 +78,7 @@ const readme = fs
   )
   .replace(/> This package also.*[^\n]/, "");
 fs.writeFileSync(path.resolve(rootDir, "README.md"), readme);
-fs.writeFileSync(path.resolve(rootDir, "lib", "README.md"), readme);
+fs.writeFileSync(path.resolve(rootDir, "treeshakable", "README.md"), readme);
 
 // Update TODO.md
 const touchupTodo = content =>
@@ -153,7 +153,7 @@ try {
   console.error(e);
 }
 
-// clean lib/src and craete commit
+// clean treeshakable/src and craete commit
 exec(
-  'rm -rf ./lib/src/ && git add . && git commit -m "Rebrand 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]" && turbo telemetry disable',
+  'rm -rf ./treeshakable/src/ && git add . && git commit -m "Rebrand 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]" && turbo telemetry disable',
 );

@@ -17,7 +17,7 @@ const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
 const isLatestRelease = BRANCH === DEFAULT_BRANCH || BRANCH.includes("release-");
 let tag = "latest";
 
-const OLD_VERSION = require("../lib/package.json").version;
+const OLD_VERSION = require("../treeshakable/package.json").version;
 if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];
@@ -39,7 +39,7 @@ try {
 
 /** not requiring as require is cached by npm/node */
 const NEW_VERSION = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "..", "lib", "package.json")),
+  fs.readFileSync(path.resolve(__dirname, "..", "treeshakable", "package.json")),
 ).version;
 
 const [newMajor, newMinor] = NEW_VERSION.split(".");
@@ -68,7 +68,7 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
 }
 
 /** Create release */
-execSync(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`);
+execSync(`cd treeshakable && pnpm build && npm publish --provenance --access public --tag ${tag}`);
 
 /** Create GitHub release */
 execSync(
