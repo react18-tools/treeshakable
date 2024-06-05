@@ -74,7 +74,7 @@ importers:
         version: 1.0.3(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
       treeshakable:
         specifier: workspace:*
-        version: link:../..
+        version: link:../../treeshakable
     devDependencies:
       '@next/eslint-plugin-next':
         specifier: ^14.2.3
@@ -117,7 +117,7 @@ importers:
         version: 3.1.0(@remix-run/node@2.9.2(typescript@5.4.5))(@remix-run/react@2.9.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
       treeshakable:
         specifier: workspace:*
-        version: link:../..
+        version: link:../../treeshakable
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -140,70 +140,6 @@ importers:
       vite:
         specifier: ^5.2.12
         version: 5.2.12(@types/node@20.14.1)(sass@1.77.4)
-
-  lib:
-    dependencies:
-      next:
-        specifier: 10 - 14
-        version: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
-      r18gs:
-        specifier: ^1.0.2
-        version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
-    devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../packages/config-eslint
-      '@repo/jest-presets':
-        specifier: workspace:*
-        version: link:../packages/jest-presets
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../packages/config-typescript
-      '@testing-library/react':
-        specifier: ^16.0.0
-        version: 16.0.0(@testing-library/dom@10.1.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/node':
-        specifier: ^20.14.1
-        version: 20.14.1
-      '@types/react':
-        specifier: ^18.3.3
-        version: 18.3.3
-      '@types/react-dom':
-        specifier: ^18.3.0
-        version: 18.3.0
-      '@vitejs/plugin-react':
-        specifier: ^4.3.0
-        version: 4.3.0(vite@5.2.12(@types/node@20.14.1)(sass@1.77.4))
-      '@vitest/coverage-v8':
-        specifier: ^1.6.0
-        version: 1.6.0(vitest@1.6.0(@types/node@20.14.1)(jsdom@24.1.0)(sass@1.77.4))
-      esbuild-plugin-react18:
-        specifier: 0.2.4
-        version: 0.2.4(@types/react@18.3.3)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
-      esbuild-plugin-react18-css:
-        specifier: ^0.0.4
-        version: 0.0.4
-      jsdom:
-        specifier: ^24.1.0
-        version: 24.1.0
-      react:
-        specifier: ^18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.3.1
-        version: 18.3.1(react@18.3.1)
-      tsup:
-        specifier: ^8.1.0
-        version: 8.1.0(postcss@8.4.38)(ts-node@10.9.2(@types/node@20.14.1)(typescript@5.4.5))(typescript@5.4.5)
-      typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
-      vite-tsconfig-paths:
-        specifier: ^4.3.2
-        version: 4.3.2(typescript@5.4.5)(vite@5.2.12(@types/node@20.14.1)(sass@1.77.4))
-      vitest:
-        specifier: ^1.6.0
-        version: 1.6.0(@types/node@20.14.1)(jsdom@24.1.0)(sass@1.77.4)
 
   packages/config-eslint:
     devDependencies:
@@ -287,7 +223,7 @@ importers:
         version: 1.0.3(@types/react@18.3.3)(next@14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
       treeshakable:
         specifier: workspace:*
-        version: link:../..
+        version: link:../../treeshakable
       zustand:
         specifier: ^4.5.2
         version: 4.5.2(@types/react@18.3.3)(react@18.3.1)
@@ -348,6 +284,70 @@ importers:
         version: 1.6.0(@types/node@20.14.1)(jsdom@24.1.0)(sass@1.77.4)
 
   scripts: {}
+
+  treeshakable:
+    dependencies:
+      next:
+        specifier: 10 - 14
+        version: 14.2.3(@babel/core@7.24.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
+      r18gs:
+        specifier: ^1.0.2
+        version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../packages/config-eslint
+      '@repo/jest-presets':
+        specifier: workspace:*
+        version: link:../packages/jest-presets
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../packages/config-typescript
+      '@testing-library/react':
+        specifier: ^16.0.0
+        version: 16.0.0(@testing-library/dom@10.1.0)(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/node':
+        specifier: ^20.14.1
+        version: 20.14.1
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.0
+      '@vitejs/plugin-react':
+        specifier: ^4.3.0
+        version: 4.3.0(vite@5.2.12(@types/node@20.14.1)(sass@1.77.4))
+      '@vitest/coverage-v8':
+        specifier: ^1.6.0
+        version: 1.6.0(vitest@1.6.0(@types/node@20.14.1)(jsdom@24.1.0)(sass@1.77.4))
+      esbuild-plugin-react18:
+        specifier: 0.2.4
+        version: 0.2.4(@types/react@18.3.3)(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+      esbuild-plugin-react18-css:
+        specifier: ^0.0.4
+        version: 0.0.4
+      jsdom:
+        specifier: ^24.1.0
+        version: 24.1.0
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      tsup:
+        specifier: ^8.1.0
+        version: 8.1.0(postcss@8.4.38)(ts-node@10.9.2(@types/node@20.14.1)(typescript@5.4.5))(typescript@5.4.5)
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+      vite-tsconfig-paths:
+        specifier: ^4.3.2
+        version: 4.3.2(typescript@5.4.5)(vite@5.2.12(@types/node@20.14.1)(sass@1.77.4))
+      vitest:
+        specifier: ^1.6.0
+        version: 1.6.0(@types/node@20.14.1)(jsdom@24.1.0)(sass@1.77.4)
 
 packages:
 
