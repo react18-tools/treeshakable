@@ -2,7 +2,7 @@
   "name": "treeshakable",
   "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Enhance any state management library with full tree-shaking capabilities using this universal library",
   "license": "MPL-2.0",
   "main": "./dist/index.js",
