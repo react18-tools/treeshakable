@@ -43,19 +43,6 @@
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.0.3"
   },
-  "dependencies": {
-    "r18gs": "^2.0.0"
-  },
-  "peerDependencies": {
-    "@types/react": "16.8 - 19",
-    "next": "10 - 14",
-    "react": "16.8 - 19"
-  },
-  "peerDependenciesMeta": {
-    "next": {
-      "optional": true
-    }
-  },
   "funding": [
     {
       "type": "github",
