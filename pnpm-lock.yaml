@@ -202,25 +202,25 @@ importers:
     dependencies:
       '@mayank1513/fork-me':
         specifier: ^2.1.2
-        version: 2.1.2(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 2.1.2(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       '@repo/scripts':
         specifier: workspace:*
         version: link:../../scripts
       next:
         specifier: 10 - 14
-        version: 14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
+        version: 14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
       nextjs-themes:
         specifier: ^4.0.4
-        version: 4.0.4(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 4.0.4(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       r18gs:
         specifier: ^2.0.1
-        version: 2.0.1(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 2.0.1(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react-live:
         specifier: ^4.1.8
         version: 4.1.8(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react18-loaders:
         specifier: ^1.1.4
-        version: 1.1.4(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 1.1.4(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       treeshakable:
         specifier: workspace:*
         version: link:../../treeshakable
@@ -257,7 +257,7 @@ importers:
         version: 2.1.8(vitest@2.1.8(@types/node@22.10.2)(jsdom@25.0.1)(sass@1.83.0))
       esbuild-plugin-react18:
         specifier: ^0.2.5
-        version: 0.2.5(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 0.2.5(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -316,7 +316,7 @@ importers:
         version: 2.1.8(vitest@2.1.8(@types/node@22.10.2)(jsdom@25.0.1)(sass@1.83.0))
       esbuild-plugin-react18:
         specifier: 0.2.5
-        version: 0.2.5(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 0.2.5(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -1992,20 +1992,20 @@ packages:
     resolution: {integrity: sha512-zfETvRFA8o7EiNn++N5f/kaCw221hrpGsDmcpndVupkPzEc1Wuf3VgC0qby1BbHs7f5DVYjgtEU2LLh5bqeGfQ==}
     engines: {node: '>= 0.4'}
 
-  array.prototype.flat@1.3.2:
-    resolution: {integrity: sha512-djYB+Zx2vLewY8RWlNCUdHjDXs2XOgm602S9E7P/UpHgfeHL00cRiIF+IN/G/aUJ7kGPb6yO/ErDI5V2s8iycA==}
+  array.prototype.flat@1.3.3:
+    resolution: {integrity: sha512-rwG/ja1neyLqCuGZ5YYrznA62D4mZXg0i1cIskIUKSiqF3Cje9/wXAls9B9s1Wa2fomMsIv8czB8jZcPmxCXFg==}
     engines: {node: '>= 0.4'}
 
-  array.prototype.flatmap@1.3.2:
-    resolution: {integrity: sha512-Ewyx0c9PmpcsByhSW4r+9zDU7sGjFc86qf/kKtuSCRdhfbk0SNLLkaT5qvcHnRGgc5NP/ly/y+qkXkqONX54CQ==}
+  array.prototype.flatmap@1.3.3:
+    resolution: {integrity: sha512-Y7Wt51eKJSyi80hFrJCePGGNo5ktJCslFuboqJsbf57CCPcm5zztluPlc4/aD8sWsKvlwatezpV4U1efk8kpjg==}
     engines: {node: '>= 0.4'}
 
   array.prototype.tosorted@1.1.4:
     resolution: {integrity: sha512-p6Fx8B7b7ZhL/gmUsAy0D15WhvDccw3mnGNbZpi3pmeJdxtWsj2jEaI4Y6oo3XiHfzuSgPwKc04MYt6KgvC/wA==}
     engines: {node: '>= 0.4'}
 
-  arraybuffer.prototype.slice@1.0.3:
-    resolution: {integrity: sha512-bMxMKAjg13EBSVscxTaYA4mRc5t1UAXa2kXiGTNfZ079HIWXEkKmkgFrh/nJqamaLSrXO5H4WFFkPEaLJWbs3A==}
+  arraybuffer.prototype.slice@1.0.4:
+    resolution: {integrity: sha512-BNoCY6SXXPQ7gF2opIP4GBE+Xw7U+pHMYKuzjgCN3GwiaIR09UUeKfheyIry77QtrCBlC0KK0q5/TER/tYh3PQ==}
     engines: {node: '>= 0.4'}
 
   assertion-error@2.0.1:
@@ -2135,8 +2135,8 @@ packages:
     resolution: {integrity: sha512-oKlSFMcMwpUg2ednkhQ454wfWiU/ul3CkJe/PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747YXBn1im9ww==}
     engines: {node: '>= 0.4'}
 
-  call-bound@1.0.2:
-    resolution: {integrity: sha512-0lk0PHFe/uz0vl527fG9CgdE9WdafjDbCXvBbs+LUv000TVt2Jjhqbs4Jwm8gz070w8xXyEAxrPOMullsxXeGg==}
+  call-bound@1.0.3:
+    resolution: {integrity: sha512-YTd+6wGlNlPxSuri7Y6X8tY2dmm12UMH66RpKMhiX6rsk5wXXnYgbUcOt8kiS31/AjfoTOvCsE+w8nZQLQnzHA==}
     engines: {node: '>= 0.4'}
 
   callsites@3.1.0:
@@ -3018,8 +3018,8 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
-  function.prototype.name@1.1.6:
-    resolution: {integrity: sha512-Z5kx79swU5P27WEayXM1tBi5Ze/lbIyiNgU3qyXUOf9b2rgXYyF9Dy9Cx+IQv/Lc8WCG6L82zwUPpSS9hGehIg==}
+  function.prototype.name@1.1.7:
+    resolution: {integrity: sha512-2g4x+HqTJKM9zcJqBSpjoRmdcPFtJM60J3xJisTQSXBWka5XqyBN/2tNUgma1mztTXyDuUsEtYe5qcs7xYzYQA==}
     engines: {node: '>= 0.4'}
 
   functions-have-names@1.2.3:
@@ -6720,12 +6720,12 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mayank1513/fork-me@2.1.2(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)':
+  '@mayank1513/fork-me@2.1.2(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)':
     dependencies:
       '@types/react': 19.0.1
       react: 19.0.0
     optionalDependencies:
-      next: 14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
+      next: 14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
   '@microsoft/tsdoc-config@0.16.2':
     dependencies:
@@ -7597,14 +7597,14 @@ snapshots:
       es-object-atoms: 1.0.0
       es-shim-unscopables: 1.0.2
 
-  array.prototype.flat@1.3.2:
+  array.prototype.flat@1.3.3:
     dependencies:
       call-bind: 1.0.8
       define-properties: 1.2.1
       es-abstract: 1.23.5
       es-shim-unscopables: 1.0.2
 
-  array.prototype.flatmap@1.3.2:
+  array.prototype.flatmap@1.3.3:
     dependencies:
       call-bind: 1.0.8
       define-properties: 1.2.1
@@ -7619,7 +7619,7 @@ snapshots:
       es-errors: 1.3.0
       es-shim-unscopables: 1.0.2
 
-  arraybuffer.prototype.slice@1.0.3:
+  arraybuffer.prototype.slice@1.0.4:
     dependencies:
       array-buffer-byte-length: 1.0.1
       call-bind: 1.0.8
@@ -7628,7 +7628,6 @@ snapshots:
       es-errors: 1.3.0
       get-intrinsic: 1.2.6
       is-array-buffer: 3.0.4
-      is-shared-array-buffer: 1.0.3
 
   assertion-error@2.0.1: {}
 
@@ -7787,9 +7786,9 @@ snapshots:
       get-intrinsic: 1.2.6
       set-function-length: 1.2.2
 
-  call-bound@1.0.2:
+  call-bound@1.0.3:
     dependencies:
-      call-bind: 1.0.8
+      call-bind-apply-helpers: 1.0.1
       get-intrinsic: 1.2.6
 
   callsites@3.1.0: {}
@@ -8173,7 +8172,7 @@ snapshots:
   es-abstract@1.23.5:
     dependencies:
       array-buffer-byte-length: 1.0.1
-      arraybuffer.prototype.slice: 1.0.3
+      arraybuffer.prototype.slice: 1.0.4
       available-typed-arrays: 1.0.7
       call-bind: 1.0.8
       data-view-buffer: 1.0.1
@@ -8184,7 +8183,7 @@ snapshots:
       es-object-atoms: 1.0.0
       es-set-tostringtag: 2.0.3
       es-to-primitive: 1.3.0
-      function.prototype.name: 1.1.6
+      function.prototype.name: 1.1.7
       get-intrinsic: 1.2.6
       get-symbol-description: 1.0.2
       globalthis: 1.0.4
@@ -8270,12 +8269,12 @@ snapshots:
       postcss-modules: 6.0.1(postcss@8.4.49)
       sass: 1.83.0
 
-  esbuild-plugin-react18@0.2.5(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  esbuild-plugin-react18@0.2.5(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
       react: 19.0.0
     optionalDependencies:
-      next: 14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
+      next: 14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
   esbuild@0.21.5:
     optionalDependencies:
@@ -8428,8 +8427,8 @@ snapshots:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
-      array.prototype.flat: 1.3.2
-      array.prototype.flatmap: 1.3.2
+      array.prototype.flat: 1.3.3
+      array.prototype.flatmap: 1.3.3
       debug: 3.2.7
       doctrine: 2.1.0
       eslint: 9.12.0
@@ -8467,7 +8466,7 @@ snapshots:
     dependencies:
       aria-query: 5.3.2
       array-includes: 3.1.8
-      array.prototype.flatmap: 1.3.2
+      array.prototype.flatmap: 1.3.3
       ast-types-flow: 0.0.8
       axe-core: 4.10.2
       axobject-query: 4.1.0
@@ -8521,7 +8520,7 @@ snapshots:
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlast: 1.2.5
-      array.prototype.flatmap: 1.3.2
+      array.prototype.flatmap: 1.3.3
       array.prototype.tosorted: 1.1.4
       doctrine: 2.1.0
       es-iterator-helpers: 1.2.0
@@ -8855,12 +8854,13 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  function.prototype.name@1.1.6:
+  function.prototype.name@1.1.7:
     dependencies:
       call-bind: 1.0.8
       define-properties: 1.2.1
-      es-abstract: 1.23.5
       functions-have-names: 1.2.3
+      hasown: 2.0.2
+      is-callable: 1.2.7
 
   functions-have-names@1.2.3: {}
 
@@ -9192,7 +9192,7 @@ snapshots:
 
   is-boolean-object@1.2.1:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       has-tostringtag: 1.0.2
 
   is-builtin-module@3.2.1:
@@ -9211,13 +9211,13 @@ snapshots:
 
   is-data-view@1.0.2:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       get-intrinsic: 1.2.6
       is-typed-array: 1.1.13
 
   is-date-object@1.1.0:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       has-tostringtag: 1.0.2
 
   is-decimal@1.0.4: {}
@@ -9275,7 +9275,7 @@ snapshots:
 
   is-regex@1.2.1:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       gopd: 1.2.0
       has-tostringtag: 1.0.2
       hasown: 2.0.2
@@ -9303,7 +9303,7 @@ snapshots:
 
   is-symbol@1.1.1:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       has-symbols: 1.1.0
       safe-regex-test: 1.1.0
 
@@ -9325,7 +9325,7 @@ snapshots:
 
   is-weakref@1.1.0:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
 
   is-weakset@2.0.3:
     dependencies:
@@ -9849,7 +9849,7 @@ snapshots:
   jsx-ast-utils@3.3.5:
     dependencies:
       array-includes: 3.1.8
-      array.prototype.flat: 1.3.2
+      array.prototype.flat: 1.3.3
       object.assign: 4.1.5
       object.values: 1.2.0
 
@@ -10370,7 +10370,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0):
+  next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0):
     dependencies:
       '@next/env': 14.2.15
       '@swc/helpers': 0.5.5
@@ -10380,7 +10380,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
-      styled-jsx: 5.1.1(@babel/core@7.26.0)(react@19.0.0)
+      styled-jsx: 5.1.1(react@19.0.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.15
       '@next/swc-darwin-x64': 14.2.15
@@ -10422,13 +10422,13 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-themes@4.0.4(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  nextjs-themes@4.0.4(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
-      r18gs: 2.0.1(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+      r18gs: 2.0.1(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react: 19.0.0
     optionalDependencies:
-      next: 14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
+      next: 14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
   nextjs-themes@4.0.4(@types/react@19.0.1)(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
@@ -10898,12 +10898,12 @@ snapshots:
     optionalDependencies:
       next: 15.1.0(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
-  r18gs@2.0.1(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  r18gs@2.0.1(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
       react: 19.0.0
     optionalDependencies:
-      next: 14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
+      next: 14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
   r18gs@2.0.1(@types/react@19.0.1)(next@15.1.0(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
@@ -10940,13 +10940,13 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react18-loaders@1.1.4(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  react18-loaders@1.1.4(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
-      r18gs: 2.0.1(@types/react@19.0.1)(next@14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+      r18gs: 2.0.1(@types/react@19.0.1)(next@14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react: 19.0.0
     optionalDependencies:
-      next: 14.2.15(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
+      next: 14.2.15(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
   react18-loaders@1.1.4(@types/react@19.0.1)(next@15.1.0(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
@@ -11159,7 +11159,7 @@ snapshots:
   safe-array-concat@1.1.3:
     dependencies:
       call-bind: 1.0.8
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       get-intrinsic: 1.2.6
       has-symbols: 1.1.0
       isarray: 2.0.5
@@ -11168,7 +11168,7 @@ snapshots:
 
   safe-regex-test@1.1.0:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       es-errors: 1.3.0
       is-regex: 1.2.1
 
@@ -11256,14 +11256,14 @@ snapshots:
 
   side-channel-map@1.0.1:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       es-errors: 1.3.0
       get-intrinsic: 1.2.6
       object-inspect: 1.13.3
 
   side-channel-weakmap@1.0.2:
     dependencies:
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       es-errors: 1.3.0
       get-intrinsic: 1.2.6
       object-inspect: 1.13.3
@@ -11420,7 +11420,7 @@ snapshots:
   string.prototype.trim@1.2.10:
     dependencies:
       call-bind: 1.0.8
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       define-data-property: 1.1.4
       define-properties: 1.2.1
       es-abstract: 1.23.5
@@ -11430,7 +11430,7 @@ snapshots:
   string.prototype.trimend@1.0.9:
     dependencies:
       call-bind: 1.0.8
-      call-bound: 1.0.2
+      call-bound: 1.0.3
       define-properties: 1.2.1
       es-object-atoms: 1.0.0
 
@@ -11469,12 +11469,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.1(@babel/core@7.26.0)(react@19.0.0):
+  styled-jsx@5.1.1(react@19.0.0):
     dependencies:
       client-only: 0.0.1
       react: 19.0.0
-    optionalDependencies:
-      '@babel/core': 7.26.0
 
   styled-jsx@5.1.6(@babel/core@7.26.0)(react@19.0.0):
     dependencies:
@@ -12144,8 +12142,8 @@ snapshots:
 
   which-builtin-type@1.2.1:
     dependencies:
-      call-bound: 1.0.2
-      function.prototype.name: 1.1.6
+      call-bound: 1.0.3
+      function.prototype.name: 1.1.7
       has-tostringtag: 1.0.2
       is-async-function: 2.0.0
       is-date-object: 1.1.0
