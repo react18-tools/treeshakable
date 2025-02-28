@@ -71,7 +71,7 @@ importers:
         version: 19.0.0(react@19.0.0)
       react18-loaders:
         specifier: ^1.1.4
-        version: 1.1.4(@types/react@19.0.10)(next@15.2.0(@babel/core@7.26.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
+        version: 1.1.4(@types/react@19.0.10)(next@15.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
       treeshakable:
         specifier: workspace:*
         version: link:../../treeshakable
@@ -111,7 +111,7 @@ importers:
         version: 19.0.0(react@19.0.0)
       react18-loaders:
         specifier: ^1.1.4
-        version: 1.1.4(@types/react@19.0.10)(next@15.2.0(@babel/core@7.26.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
+        version: 1.1.4(@types/react@19.0.10)(next@15.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
       react18-themes:
         specifier: ^3.2.0
         version: 3.2.0(@types/react@19.0.10)(next@15.2.0(@babel/core@7.26.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
@@ -220,7 +220,7 @@ importers:
         version: 4.1.8(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react18-loaders:
         specifier: ^1.1.4
-        version: 1.1.4(@types/react@19.0.10)(next@15.2.0(@babel/core@7.26.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
+        version: 1.1.4(@types/react@19.0.10)(next@15.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
       treeshakable:
         specifier: workspace:*
         version: link:../../treeshakable
@@ -2369,8 +2369,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.107:
-    resolution: {integrity: sha512-dJr1o6yCntRkXElnhsHh1bAV19bo/hKyFf7tCcWgpXbuFIF0Lakjgqv5LRfSDaNzAII8Fnxg2tqgHkgCvxdbxw==}
+  electron-to-chromium@1.5.108:
+    resolution: {integrity: sha512-tiGxpQmvXBEzrfU5ertmbCV/nG5yqCkC1G4T1SIKP335Y5rjXzPWmijR6XcoGXZvVoo4dknfdNe4Tl7lcIROLg==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -7478,7 +7478,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001701
-      electron-to-chromium: 1.5.107
+      electron-to-chromium: 1.5.108
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
@@ -7878,7 +7878,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.107: {}
+  electron-to-chromium@1.5.108: {}
 
   emittery@0.13.1: {}
 
@@ -10632,7 +10632,7 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react18-loaders@1.1.4(@types/react@19.0.10)(next@15.2.0(@babel/core@7.26.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0):
+  react18-loaders@1.1.4(@types/react@19.0.10)(next@15.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.10
       r18gs: 2.1.0(@types/react@19.0.10)(react@19.0.0)
